@@ -12,9 +12,16 @@ print(agora.minute)
 print(agora.second)
 print(agora.microsecond)
 
+# Definição da Data manual
 aniversario = datetime(2000, 5, 20)
-
 print(aniversario.day)
+
+## Criação a partir de variaveis 
+ano = 2004
+mes = 4
+dia = 17
+falso = datetime(ano, mes, dia) 
+print(falso)
 
 # Formatação da data
 agora = datetime.now()
@@ -30,7 +37,6 @@ print(data_convertida)
 mes = agora.month
 
 print(f"Hoje é o {mes}º mês do ano. Ainda faltam {12 - mes} meses para terminar o ano!")
-
 
 def nome(nome):
     dia = agora.day
