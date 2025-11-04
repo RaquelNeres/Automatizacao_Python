@@ -21,8 +21,10 @@ for linha in linhas:
 coluna_salario = planilha_funcionarios['D']
 print(coluna_salario)
 
+# iterar nas linhas, so considera os valores das celulas, linha que ele começa, linha que ele termina
 for linha in planilha_funcionarios.iter_rows(values_only=True, min_row=2, max_row=20):
     print('-'*50)
+    # pega de uma tupla (a linha retorna uma tupla)
     nome, departamento, idade, salario, data_admissao = linha
     print(f"""NOME: {nome}
 DEPARTAMENTO: {departamento}

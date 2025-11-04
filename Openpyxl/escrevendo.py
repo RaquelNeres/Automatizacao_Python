@@ -26,4 +26,5 @@ planilha_vendas.append([43.50, '29/07'])
 
 print(arquivo.sheetnames) # lista com o nome das planilhas
 
-arquivo.save('Openpyxl/planilhas_criadas/planilhas.xlsx') # nome
+# onde salvar, com qual nome
+arquivo.save('Openpyxl/planilhas_criadas/planilhas.xlsx') 
